@@ -1,11 +1,22 @@
-import { Component, signal } from '@angular/core';
-
+import { Component } from '@angular/core';
 @Component({
-  selector: 'app-root',
-  standalone: false,
-  styleUrl: './app.css',
-  templateUrl: './app.html',
+ selector: 'app-root',
+ templateUrl: './app.html',
+ styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('introAngular');
+ title = 'Mar Morales';
+  duplicaNumero(num:number):number{
+    return num*2
+  }
+ 
+  pelicula={
+    titulo: "El Padrino",
+    anio:1972,
+    genero:"Crimen/Drama",
+    fechaLanzamiento:new Date(),
+    precio:345
+  }
 }
+ 
+ 
